@@ -12,7 +12,7 @@ import java.io.FileInputStream;
 public class TestAssignment extends Auto {
     @Test
     public void login() throws Exception {
-        String excelPath = "C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Maven_Assigment\\loginCred.xls";
+        String excelPath = "C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Maven_Assigment\\src\\Data_files\\Target.xlsx";
         FileInputStream file = new FileInputStream(excelPath);
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheetAt(0);
