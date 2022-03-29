@@ -21,7 +21,7 @@ public class Deposit {
         @BeforeClass
         public void Validatesetup()
         {
-            reporter=new ExtentHtmlReporter("C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Selenium_Main_Assignment\\src\\data\\AddCustomer.xlsx"); // creating reporter object
+            reporter=new ExtentHtmlReporter("C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Selenium_Main_Assignment\\src\\data\\Deposit.html"); // creating reporter object
             extend=new ExtentReports();         // creating extent reports
             extend.attachReporter(reporter);    // attach reporter
             System.setProperty("webdriver.chrome.driver","C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Mini_Assig_Q\\chromedriver.exe"); // setting driver location

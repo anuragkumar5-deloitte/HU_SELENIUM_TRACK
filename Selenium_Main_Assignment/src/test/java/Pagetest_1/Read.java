@@ -7,7 +7,7 @@ public class Read {
                 String line = null;
 
                 // Created Bufferd Reader to Read Value From Excel
-                BufferedReader br = new BufferedReader(new FileReader("C:\\selenium_main_assesment\\NewCustomerDetails.csv"));
+                BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Selenium_Main_Assignment\\src\\data\\New_Customer_Details.csv"));
                 line = br.readLine();                     // Read Single Line From Excel
                 String[] input = line.split(",");   // Assign that line to string array with comma seperated words
                 return_value = input[index];              // The return value is the string at the index which passed in argument

@@ -25,7 +25,7 @@ public class Transaction_test {
         @BeforeClass
         public void Validatesetup()
         {
-            reporter=new ExtentHtmlReporter("C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Selenium_Main_Assignment\\src\\data\\AddCustomer.xlsx"); // creating reporter object
+            reporter=new ExtentHtmlReporter("C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Selenium_assignment\\Selenium_Main_Assignment\\src\\data\\Transaction.html"); // creating reporter object
             extend=new ExtentReports();         // creating extent reports
             extend.attachReporter(reporter);    // attach reporter
             System.setProperty("webdriver.chrome.driver","C:\\Users\\anuragkumar5\\Desktop\\Files\\Selenium_track\\Mini_Assig_Q\\chromedriver.exe"); // setting driver location
@@ -87,7 +87,7 @@ public class Transaction_test {
             {
                 test3.fail("Deposit Unsuccessful");
 
-                // take screen shot on failure
+                // take screenshot on failure
                 ScreenShot shot=new ScreenShot(driver);
                 shot.FailShot("TransactionTest case 3 Validate Deposit");
             }
@@ -131,7 +131,7 @@ public class Transaction_test {
             wecome.OptionSelection("//button[@ng-class='btnClass1']");
             test5.pass("Selected Transaction Option");
 
-            // take screen shot on success
+            // take screenshot on success
             ScreenShot shot=new ScreenShot(driver);
             shot.SuccessShot("TransactionTest case 5 Validate Transaction Option");
         }
@@ -148,14 +148,14 @@ public class Transaction_test {
                 Assert.assertEquals(result,"transaction sucess","Transaction Sucess");
                 test6.pass("Transaction Updated Successfully");
 
-                // take screen shot on success
+                // take screenshot on success
                 ScreenShot shot=new ScreenShot(driver);
                 shot.SuccessShot("TransactionTest case 6 Validate Transaction");
             }catch (AssertionError ae)
             {
                 test6.fail("Transaction Not Updated");
 
-                // take screen shot on failure
+                // take screenshot on failure
                 ScreenShot shot=new ScreenShot(driver);
                 shot.FailShot("TransactionTest case 6 Validate Transaction");
             }
